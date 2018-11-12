@@ -1,5 +1,9 @@
 # Wonky Helix Duckling - Glitch.me Single Sign On (SSO) Example
 
+Github Repo [Project Code](https://github.com/Kungfoowiz/WonkyHelixDuckling).
+
+## Angular CLI
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
 ## Development server
