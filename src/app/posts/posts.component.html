@@ -1,0 +1,14 @@
+<h1> Posts </h1>
+
+<ul>
+
+
+  <li class="list-item" *ngFor="let post of posts$">
+    <h3 class="list-heading">{{post.title}}</h3>
+    <ul>
+      <li> <strong>User Id:</strong> {{ post.userId }} <strong>Post Id:</strong> {{ post.id }} </li>
+      <li><strong>Body:</strong> {{ post.body }}</li>
+    </ul>
+  </li>
+
+</ul>

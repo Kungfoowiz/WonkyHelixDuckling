@@ -1,0 +1,79 @@
+<!-- <div class="panel panel-default profile-area">
+    <div class="panel-heading">
+      <h3>Profile</h3>
+    </div>
+    <div class="panel-body">
+      <img src="{{profile?.picture}}" class="avatar" alt="avatar">
+      <div>
+        <label><i class="glyphicon glyphicon-user"></i> Nickname</label>
+        <h3 class="nickname">{{ profile?.nickname }}</h3>
+      </div>
+      <pre class="full-profile">{{ profile | json }}</pre>
+    </div>
+  </div> -->
+
+<h1> User Details </h1>
+
+<ul>
+
+  <h3 class="list-heading"> {{ profile.name }} </h3>
+  <li class="list-item">
+    <ul>
+
+      <li>
+        <div>
+          <strong>SSO Type</strong>
+        </div>
+        <div>
+          {{ profile.sub }}
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <strong>Nickname</strong>
+        </div>
+        <div>
+          {{ profile.nickname }}
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <img src="{{ profile.picture }}" alt="Picture" />
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <strong>Gender</strong>
+        </div>
+        <div>
+          {{ profile.gender }}
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <strong>Locale</strong>
+        </div>
+        <div>
+          {{ profile.locale }}
+        </div>
+      </li>
+
+      <li>
+        <div>
+          <strong>Last Updated</strong>
+        </div>
+        <div>
+          {{ profile.updated_at }}
+        </div>
+      </li>
+
+    </ul>
+  </li>
+</ul>
+
+<!-- 
+<pre class="full-profile">{{ profile | json }}</pre> -->

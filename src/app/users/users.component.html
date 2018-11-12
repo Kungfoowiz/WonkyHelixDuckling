@@ -1,0 +1,16 @@
+
+<h1>Users</h1>
+
+<ul [@listStagger]="users$">
+
+  <li class="list-item" *ngFor="let user of users$">
+
+    <a class="link list-heading" routerLink="/details/{{user.id}}">{{user.name}}</a>
+    <ul>
+      <li>{{user.email}}</li>
+      <li><a class="link" href="http://{{user.website}}">{{user.website}}</a></li>
+    </ul>
+
+  </li>
+
+</ul>

@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    font-size: 12px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 70px auto;
+    height: 100%;
+}
+
+.content {
+    padding: 30px 50px;
+}
+
+nav {
+    background: #2d2e2e;
+    height: 100%;
+    ul {
+        margin: 0px;
+        padding: 0px;
+        background-color: transparent;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.link {
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #777;
+    &:hover {
+        color: #bbb;
+        background-color: #fff;
+    }
+}
+
+.nav-link {
+    padding: 20px;
+    text-align: center;
+
+    color: #007fff;
+}
+
+.nav-link__text {
+    font-size: 10px;
+}
+
+h1,
+h3 {
+    margin: 0px;
+}
+
+.list-heading {
+    color: #007fff;
+    font-size: 22px;
+    font-weight: normal;
+    &:hover {
+        color: #bbb;
+    }
+}
+
+.list-item {
+    margin: 5px 0px;
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+.activated {
+    background-color: #fff;
+}
+
+/* BEM test */
+
+.block {
+    @extend .common;
+    display: block;
+}
+
+.block__element {
+    text-align: center;
+}
+
+.block--modifier {
+    background-color: red;
+}
+
+.common {
+    font-size: 14px;
+    font-family: sans-serif;
+}

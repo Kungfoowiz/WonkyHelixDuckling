@@ -1,0 +1,44 @@
+<nav>
+  <ul>
+
+      <li>
+          <a class="link nav-link" routerLink="" [class.activated]="currentUrl === '/' || currentUrl === '/home'">
+            <mat-icon>home</mat-icon>
+          </a>
+        </li>
+
+    <li>
+      <a class="link nav-link" routerLink="" *ngIf="!authService.isAuthenticated()" (click)="authService.login()">
+        <span class="nav-link__text">Login</span>
+        <mat-icon>security</mat-icon>
+      </a>
+      <a class="link nav-link" routerLink="" *ngIf="authService.isAuthenticated()" (click)="authService.logout()">
+        <span class="nav-link__text">Logout</span>
+          <mat-icon>verified_user</mat-icon>
+        </a>
+    </li>
+
+    <li>
+      <a class="link nav-link" routerLink="profile" *ngIf="authService.isAuthenticated()" 
+        [class.activated]="currentUrl === '/profile' || currentUrl.startsWith('/profile')">
+        <mat-icon>star</mat-icon>
+      </a>
+    </li>
+
+    <li>
+      <a class="link nav-link" routerLink="posts" [class.activated]="currentUrl === '/posts'">
+        <mat-icon>message</mat-icon>
+      </a>
+    </li>
+
+    <li>
+      <a class="link nav-link" routerLink="users" [class.activated]="currentUrl === '/users' || currentUrl.indexOf('/details/') > -1">
+        <mat-icon>people</mat-icon>
+      </a>
+    </li>
+
+
+  </ul>
+
+
+</nav>

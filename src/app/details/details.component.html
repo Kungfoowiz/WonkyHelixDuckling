@@ -1,0 +1,40 @@
+<h1> User Details </h1>
+
+<ul *ngIf="user$">
+
+  <h3 class="list-heading"> {{ user$.name }} </h3>
+  <li class="list-item">
+    <ul>
+
+      <li>
+        <div>
+          <strong>Username</strong>
+        </div>
+        <div>
+          {{ user$.username }}
+        </div>
+      </li>
+
+
+      <li>
+        <div>
+          <strong>Email</strong>
+        </div>
+        <div>
+          {{ user$.email }}
+        </div>
+      </li>
+
+
+      <li>
+        <div>
+          <strong>Phone</strong>
+        </div>
+        <div>
+          {{ user$.phone }}
+        </div>
+      </li>
+
+    </ul>
+  </li>
+</ul>
